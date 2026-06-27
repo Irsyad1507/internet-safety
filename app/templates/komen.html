@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+    
+  {% block title %}
+    Komen - Keselamatan di Internet
+  {% endblock %}
+    
+  {% block content %}
+    <p> Kesimpulannya, walaupun Internet mengandungi pelbagai isu,anda boleh menanganinya dengan mengikuti tips yang tersedia dalam laman web ini. </p>
+    <br/>
+      <h2>Adakah laman web ini membantu? </h2>
+      <form method="POST">
+        <label for="floatingInput">Nama</label>
+        <input type="text" class="form-control form-floating" id="floatingInput" placeholder="Nama" name="name" required>
+        <br/>
+        <select class="form-select" aria-label="Default select example" name="helpful" required>
+          <option selected>Sila pilih</option>
+          <option value="1">Ya</option>
+          <option value="0">Tidak</option>
+        </select>
+        <br/>
+        <label for="floatingTextarea2">Komen</label>
+        <textarea class="form-control form-floating" placeholder="Komen" id="floatingTextarea2" style="height: 100px" name="comment" required></textarea>
+        <br/>
+        <input class="btn btn-primary" type="submit" value="Hantar">
+    </form>
+  {% endblock %}

@@ -1,0 +1,13 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the text horizontally */
+    position: relative;
+    width: 100%;
+}
+
+/* Pulls the image out of the flex flow and pins it to the left */
+.banner img {
+    position: absolute;
+    left: 0;
+}
