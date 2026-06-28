@@ -9,6 +9,7 @@
     <br/>
       <h2>Adakah laman web ini membantu? </h2>
       <form method="POST">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
         <label for="floatingInput">Nama</label>
         <input type="text" class="form-control form-floating" id="floatingInput" placeholder="Nama" name="name" required>
         <br/>
