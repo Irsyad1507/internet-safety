@@ -10,4 +10,13 @@ wheels/
 .venv
 
 # Environment variables
-.env
+.env*
+
+# Database files
+*.db
+*.sqlite
+instance/
+
+# Docker files
+docker-compose.yml
+.dockerignore
